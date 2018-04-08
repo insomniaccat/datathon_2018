@@ -27,4 +27,8 @@ group_perf_score = pn.read_csv( gps_file_name)
 indiv_perf_score = pn.read_csv( ips_file_name)
 phys_comp        = pn.read_csv( cn_file_name)
 
-
+# Plot correlations within and between data
+colormap = plt.cm.RdBu
+plt.figure()
+## Currently broken, need to finish converting all data to floats first
+sns.heatmap( phys_comp.astype(float).corr(), linewidths=0.1, vmax=1.0, square=True, cmap=colormap, linecolor='white', annot=True)
