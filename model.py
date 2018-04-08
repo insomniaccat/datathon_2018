@@ -5,6 +5,15 @@ import matplotlib.pyplot as plt
 import random            as rnd
 import seaborn           as sns
 
+# Import machine learning libraries
+from sklearn.linear_model import LogisticRegression
+from sklearn.linear_model import Perceptron
+from sklearn.linear_model import SGDClassifier
+from sklearn.svm import SVC, LinearSVC
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.naive_bayes import GaussianNB
+from sklearn.tree import DecisionTreeClassifier
 
 # Define the file names
 pe_file_name = "Physician_Compare_2015_Group_Public_Reporting_-_Patient_Experience.csv"
